@@ -226,6 +226,7 @@ public class RestApiController {
                 String text = rt.get("text").asText();
                 String updatedAt = rt.get("updatedAt").asText();
 
+                //Extract relevant info from the response and use it for what you want, in this case build a Cat Fact
                 CatFact catFacts = new CatFact(type, text, updatedAt);
                 factList.add(catFacts);
             }
